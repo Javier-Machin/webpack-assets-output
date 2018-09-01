@@ -6,3 +6,7 @@ html, body {
 h1 {
   color: red;
 }
+
+#content {
+  background-image: url('./ds3.jpg');
+}
