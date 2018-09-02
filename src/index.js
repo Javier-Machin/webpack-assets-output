@@ -1,12 +1,17 @@
 import './style.css';
-import Image from './ds3.jpg'
+import myImage from './ds3.jpg';
+import printMe from './print.js';
 
 document.getElementById("main-title").innerHTML = "Hello Webpack";
 
-// const content = document.getElementById("content");
+const content = document.getElementById("content");
+const newImage = new Image();
+const btn = document.createElement('button');
 
-// const myImage = document.createElement("img");
+newImage.src = myImage;
+btn.innerHTML = "Click me and check console!";
+btn.onclick = printMe;
 
-// myImage.src = Image;
 
-// content.appendChild(myImage);
+content.appendChild(newImage);
+content.appendChild(btn);
